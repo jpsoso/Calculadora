@@ -1,0 +1,12 @@
+/home/jesusp/Desktop/Calculadora/build/linux/x64/debug/bundle/calculadora
+/home/jesusp/Desktop/Calculadora/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/jesusp/Desktop/Calculadora/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/jesusp/Desktop/Calculadora/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+/home/jesusp/Desktop/Calculadora/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json
+/home/jesusp/Desktop/Calculadora/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/home/jesusp/Desktop/Calculadora/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+/home/jesusp/Desktop/Calculadora/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
+/home/jesusp/Desktop/Calculadora/build/linux/x64/debug/bundle/data/flutter_assets/shaders/ink_sparkle.frag
+/home/jesusp/Desktop/Calculadora/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
+/home/jesusp/Desktop/Calculadora/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.bin
+/home/jesusp/Desktop/Calculadora/build/linux/x64/debug/bundle/data/flutter_assets/version.json

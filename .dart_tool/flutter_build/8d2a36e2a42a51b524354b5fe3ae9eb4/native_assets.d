@@ -1,0 +1,1 @@
+ /home/jesusp/Desktop/Calculadora/.dart_tool/flutter_build/8d2a36e2a42a51b524354b5fe3ae9eb4/native_assets.yaml: 
