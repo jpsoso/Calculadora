@@ -204,7 +204,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Container(
             alignment: Alignment.center,
             child: ElevatedButton(
-              onPressed: () { this._primerOperando.text = '0.0'; this._segundoOperando.text = '0.0';},
+              onPressed: () { this._primerOperando.text = ''; this._segundoOperando.text = '';},
               child: Icon(CupertinoIcons.trash_circle_fill),
               style: ElevatedButton.styleFrom(shape: CircleBorder()),
             ),
