@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'classes.dart';
 import 'package:flutter/cupertino.dart';
+
+import 'package:calculadora/Contexto.dart';
+import 'package:calculadora/Suma.dart';
+import 'package:calculadora/Resta.dart';
+import 'package:calculadora/Multiplicacion.dart';
+import 'package:calculadora/Division.dart';
+import 'package:calculadora/Potencia.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -62,39 +70,39 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   double _answer = 0;
-  Operacion operacion = Suma();
+  Contexto contexto = Contexto();
 
   TextEditingController _primerOperando = TextEditingController(),
   _segundoOperando = TextEditingController();
 
   void _suma() {
     setState(() {
-      this.operacion = Suma();
-      this._answer = this.operacion.calcula(double.parse(this._primerOperando.text), double.parse(this._segundoOperando.text));
+      this.contexto.changeOperation(Suma());
+      this._answer = this.contexto.calcula(double.parse(this._primerOperando.text), double.parse(this._segundoOperando.text));
     });
   }
   void _resta() {
     setState(() {
-      this.operacion = Resta();
-      this._answer = this.operacion.calcula(double.parse(this._primerOperando.text), double.parse(this._segundoOperando.text));
+      this.contexto.changeOperation(Resta());
+      this._answer = this.contexto.calcula(double.parse(this._primerOperando.text), double.parse(this._segundoOperando.text));
     });
   }
   void _multiplica() {
     setState(() {
-      this.operacion = Multiplicacion();
-      this._answer = this.operacion.calcula(double.parse(this._primerOperando.text), double.parse(this._segundoOperando.text));
+      this.contexto.changeOperation(Multiplicacion());
+      this._answer = this.contexto.calcula(double.parse(this._primerOperando.text), double.parse(this._segundoOperando.text));
     });
   }
   void _divide() {
     setState(() {
-      this.operacion = Division();
-      this._answer = this.operacion.calcula(double.parse(this._primerOperando.text), double.parse(this._segundoOperando.text));
+      this.contexto.changeOperation(Division());
+      this._answer = this.contexto.calcula(double.parse(this._primerOperando.text), double.parse(this._segundoOperando.text));
     });
   }
   void _eleva() {
     setState(() {
-      this.operacion = Potencia();
-      this._answer = this.operacion.calcula(double.parse(this._primerOperando.text), double.parse(this._segundoOperando.text));
+      this.contexto.changeOperation(Potencia());
+      this._answer = this.contexto.calcula(double.parse(this._primerOperando.text), double.parse(this._segundoOperando.text));
     });
   }
   void _setToAnswer(TextEditingController controller) {
