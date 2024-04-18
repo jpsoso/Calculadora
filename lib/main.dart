@@ -239,7 +239,23 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: ElevatedButton.styleFrom(shape: StadiumBorder()),
                 ),
                 ElevatedButton(
-                  onPressed: () { this._divide(); },
+                  onPressed: () {
+                      if (double.parse(this._segundoOperando.text) != 0)
+                        {
+                          this._divide();
+                        }
+                      else
+                        {
+                          showDialog(
+                              context: context,
+                              builder: (BuildContext context) {
+                                return const AlertDialog(
+                                  scrollable: true,
+                                  title: Text('No se puede dividir por 0!!', style: TextStyle(color: Colors.red))
+                                );
+                              });
+                        }
+                    },
                   child: Icon(CupertinoIcons.divide),
                   style: ElevatedButton.styleFrom(shape: StadiumBorder()),
                 ),
